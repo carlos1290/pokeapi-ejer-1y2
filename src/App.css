@@ -1,42 +1,88 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Contenedor principal */
+div {
+  font-family: 'Orbitron', sans-serif; /* Fuente futurista */
+  background: linear-gradient(135deg, #2b2b2b, #1a1a1a); /* Fondo degradado oscuro */
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Sombra profunda */
+  border: 2px solid #00ffcc; /* Borde neón */
+}
+
+/* Título del Pokémon */
+h2 {
+  color: #00ffcc; /* Color neón */
+  text-shadow: 4px 4px #000000; /* Sombra negra intensa */
+  font-size: 2.8rem;
+  margin-bottom: 20px;
   text-align: center;
+  letter-spacing: 2px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Información general */
+p {
+  color: #ffffff; /* Blanco puro */
+  font-size: 1.3rem;
+  margin: 10px 0;
+  text-shadow: 1px 1px #00ffcc; /* Sombra neón */
+  letter-spacing: 1px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Sprites del Pokémon */
+img {
+  margin: 15px;
+  border: 3px solid #1e90ff; /* Borde azul neón */
+  border-radius: 10px;
+  background-color: #000000; /* Fondo negro */
+  padding: 10px;
+  box-shadow: 0 0 10px #1e90ff, 0 0 20px #00ffcc; /* Efecto neón */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Efecto hover en imágenes */
+img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffcc; /* Sombra neón al hover */
 }
 
-.card {
-  padding: 2em;
+/* Lista de estadísticas y tipos */
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.read-the-docs {
-  color: #888;
+li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #00ffcc; /* Neón */
+  padding: 8px;
+  background-color: rgba(30, 144, 255, 0.1); /* Fondo azul traslúcido */
+  border-radius: 10px;
+  border: 1px solid #00ffcc; /* Borde neón */
+  text-shadow: 1px 1px #000000; /* Sombra negra */
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo específico para los nombres de estadísticas */
+li:first-child {
+  font-weight: bold;
+  color: #ff00ff; /* Magenta neón */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro traslúcido */
+}
+
+/* Estilo específico para los nombres de tipos */
+li:last-child {
+  font-weight: bold;
+  color: #00ff00; /* Verde neón */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro traslúcido */
+}
+
+/* Cargando mensaje */
+p:last-child {
+  color: #ff00ff; /* Magenta neón */
+  font-size: 1.7rem;
+  text-align: center;
+  text-shadow: 3px 3px #000000; /* Sombra negra intensa */
+  letter-spacing: 2px;
 }
